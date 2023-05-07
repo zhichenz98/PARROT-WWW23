@@ -1,7 +1,7 @@
-# Regularized OT
+# PARROT: Position-Aware Regularized Optimal Transport for Network Alignment
 
 ## Overview
-Implementation of "PARROT: Position-Aware Regularized Optimal Transport for Network Alignment" in WWW23.
+Implementation of **"PARROT: Position-Aware Regularized Optimal Transport for Network Alignment"** in WWW23 (https://dl.acm.org/doi/abs/10.1145/3543507.3583357).
 - PARROT
     - cpot.m: constrained proximal point iteration for optimal transport in the log domain. Finding optimal solutions to regularized OT problems.
     - parrot.m: PARROT algorithm. Solving attributed/plain network alignment problem via position-aware regularized optimal transport.
@@ -31,3 +31,6 @@ For further use, a matfile is requried for each alignment task, including the fo
 - X1/X2: two node attribute matrices with shape [n1,d], [n2,d] for two networks. Use empty matrices for plain network alignment.
 - H: anchor node set with shape [n2,n1] where H(i,j) indicates node j in G1 is aligned with node i in G2.
 - gnd: ground-truth alignement with shape=[m,2] where the first column is the node index in G1 and the second column is the node index in G2.
+
+## Reference
+Zeng, Zhichen, et al. "PARROT: Position-Aware Regularized Optimal Transport for Network Alignment." Proceedings of the ACM Web Conference 2023. 2023.
