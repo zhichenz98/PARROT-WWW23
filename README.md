@@ -28,9 +28,9 @@ Implementation of **"PARROT: Position-Aware Regularized Optimal Transport for Ne
 Directly run matlab files in the experiments folder to reproduce results in the paper.
 For further use, a matfile is requried for each alignment task, including the following components:
 - A1/A2: two adjacency matrices with shape [n1,n1], [n2,n2] for two networks.
-- X1/X2: two node attribute matrices with shape [n1,d], [n2,d] for two networks. Use empty matrices for plain network alignment.
+- X1/X2: two node attribute matrices with shape [n1,d], [n2,d] for two networks. Use empty matrices for plain networks.
 - H: anchor node set with shape [n2,n1] where H(i,j) indicates node j in G1 is aligned with node i in G2.
 - gnd: ground-truth alignement with shape=[m,2] where the first column is the node index in G1 and the second column is the node index in G2.
 
 ## Reference
-Zeng, Zhichen, et al. "PARROT: Position-Aware Regularized Optimal Transport for Network Alignment." Proceedings of the ACM Web Conference 2023. 2023.
+Zhichen Zeng, Si Zhang, Yinglong Xia, and Hanghang Tong. PARROT: Position-Aware Regularized Optimal Transport for Network Alignment. In *Proceedings of the ACM Web Conference 2023*, pp. 372–382, 2023.
