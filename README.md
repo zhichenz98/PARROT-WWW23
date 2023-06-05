@@ -3,7 +3,7 @@
 ## Overview
 Implementation of [**"PARROT: Position-Aware Regularized Optimal Transport for Network Alignment"**](https://dl.acm.org/doi/abs/10.1145/3543507.3583357) in WWW23.
 <p align="center">
-  <img width="1200" height="600" src="./imgs/parrot.png">
+  <img width="800" height="400" src="./imgs/parrot.png">
 </p>
 
 - PARROT
