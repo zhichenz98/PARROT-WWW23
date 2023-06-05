@@ -1,7 +1,11 @@
 # PARROT: Position-Aware Regularized Optimal Transport for Network Alignment
 
 ## Overview
-Implementation of **"PARROT: Position-Aware Regularized Optimal Transport for Network Alignment"** in WWW23 (https://dl.acm.org/doi/abs/10.1145/3543507.3583357).
+Implementation of [**"PARROT: Position-Aware Regularized Optimal Transport for Network Alignment"**](https://dl.acm.org/doi/abs/10.1145/3543507.3583357) in WWW23.
+<p align="center">
+  <img width="800" height="315" src="./imgs/parrot.png">
+</p>
+
 - PARROT
     - cpot.m: constrained proximal point iteration for optimal transport in the log domain. Finding optimal solutions to regularized OT problems.
     - parrot.m: PARROT algorithm. Solving attributed/plain network alignment problem via position-aware regularized optimal transport.
@@ -24,6 +28,11 @@ Implementation of **"PARROT: Position-Aware Regularized Optimal Transport for Ne
     |foursquare<br>twitter   |5,313<br>5,210   |54,233<br>130,575   |0   |
     |phone<br>email   |1,000<br>1,003   |41,191<br>4,627   |0   |
 
+- results
+<p align="center">
+  <img width="800" height="315" src="./imgs/results.png">
+</p>
+
 ## How to use
 Directly run matlab files in the experiments folder to reproduce results in the paper.
 For further use, a matfile is requried for each alignment task, including the following components:
@@ -33,4 +42,23 @@ For further use, a matfile is requried for each alignment task, including the fo
 - gnd: ground-truth alignement with shape=[m,2] where the first column is the node index in G1 and the second column is the node index in G2.
 
 ## Reference
-Zhichen Zeng, Si Zhang, Yinglong Xia, and Hanghang Tong. PARROT: Position-Aware Regularized Optimal Transport for Network Alignment. In *Proceedings of the ACM Web Conference 2023*, pp. 372–382, 2023.
+If you find our work useful for your research, please consider cite PARROT with the following bibtex:
+
+```
+@inproceedings{10.1145/3543507.3583357,
+    author = {Zeng, Zhichen and Zhang, Si and Xia, Yinglong and Tong, Hanghang},
+    title = {PARROT: Position-Aware Regularized Optimal Transport for Network Alignment},
+    year = {2023},
+    isbn = {9781450394161},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3543507.3583357},
+    doi = {10.1145/3543507.3583357},
+    booktitle = {Proceedings of the ACM Web Conference 2023},
+    pages = {372–382},
+    numpages = {11},
+    keywords = {optimal transport, alignment consistency, network alignment},
+    location = {Austin, TX, USA},
+    series = {WWW '23}
+}
+```
