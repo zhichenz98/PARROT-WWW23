@@ -6,6 +6,10 @@ Implementation of [**"PARROT: Position-Aware Regularized Optimal Transport for N
   <img width="800" height="400" src="./imgs/parrot.png">
 </p>
 
+## Python Version
+A python version of PARROT is released at [https://github.com/yq-leo/PARROT-Python](https://github.com/yq-leo/PARROT-Python).
+
+## Code
 - PARROT
     - cpot.m: constrained proximal point iteration for optimal transport in the log domain. Finding optimal solutions to regularized OT problems.
     - parrot.m: PARROT algorithm. Solving attributed/plain network alignment problem via position-aware regularized optimal transport.
@@ -33,7 +37,7 @@ Implementation of [**"PARROT: Position-Aware Regularized Optimal Transport for N
   <img width="800" height="315" src="./imgs/results.png">
 </p>
 
-## How to use
+## Usage
 Directly run matlab files in the experiments folder to reproduce results in the paper.
 For further use, a matfile is requried for each alignment task, including the following components:
 - A1/A2: two adjacency matrices with shape [n1,n1], [n2,n2] for two networks.
